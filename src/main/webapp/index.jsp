@@ -7,7 +7,7 @@
 <title>Add Student</title>
 </head>
 <body>
-<form id="StudentForm" action="student?action=add" method="post">
+<form action="student" method="post">
 
 Student Id: <input type="text" name="id">
 <br>

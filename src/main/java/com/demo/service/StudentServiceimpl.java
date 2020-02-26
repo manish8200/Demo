@@ -45,7 +45,14 @@ public class StudentServiceimpl implements StudentService{
 		// TODO Auto-generated method stub
 
 		EntityManager entityManager = getConnection();
-		Query query = entityManager.createQuery("udate Student setName=: ");
+		Query query = entityManager.createQuery("udate Student set Name=:name , address=:add, city=:city, zip=:zip, email=:email, dob=:dob where id=:id");
+		query.setParameter("name", name);
+		query.setParameter("add", add);
+		query.setParameter("city", city);
+		query.setParameter("zip", zip);
+		query.setParameter("email", email);
+		query.setParameter("dob", dob);
+		
 		
 	}
 
