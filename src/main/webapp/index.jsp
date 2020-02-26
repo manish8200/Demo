@@ -7,7 +7,7 @@
 <title>Add Student</title>
 </head>
 <body>
-<form action="student?action=add" method="post">
+<form id="StudentForm" action="student?action=add" method="post">
 
 Student Id: <input type="text" name="id">
 <br>
@@ -24,6 +24,8 @@ e-mail : <input type="text" name="email">
 Date Of Birth : <input type="date" name="date">
 <br>
 <input type="submit" value="save"> 
+<input type="reset" value="Reset"> 
+
 <a href="student?action=list">View Student List</a>
 </form>
 
